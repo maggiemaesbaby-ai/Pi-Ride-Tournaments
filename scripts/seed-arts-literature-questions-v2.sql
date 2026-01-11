@@ -1,0 +1,60 @@
+-- IQ Arena - Arts & Literature Questions (Batch 2)
+-- 50 additional questions with mixed difficulty levels
+
+INSERT INTO trivia_questions (category_id, question, correct_answer, option_a, option_b, option_c, option_d, difficulty, game_mode) VALUES
+
+-- Rookie Questions (20)
+((SELECT id FROM trivia_categories WHERE name = 'Arts & Literature'), 'Who painted the Mona Lisa?', 'Leonardo da Vinci', 'Michelangelo', 'Leonardo da Vinci', 'Raphael', 'Rembrandt', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Arts & Literature'), 'Who wrote "Romeo and Juliet"?', 'William Shakespeare', 'Charles Dickens', 'William Shakespeare', 'Jane Austen', 'Mark Twain', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Arts & Literature'), 'What is the name of Harry Potter''s owl?', 'Hedwig', 'Scabbers', 'Hedwig', 'Crookshanks', 'Fawkes', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Arts & Literature'), 'Who painted "The Starry Night"?', 'Vincent van Gogh', 'Claude Monet', 'Vincent van Gogh', 'Pablo Picasso', 'Salvador Dalí', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Arts & Literature'), 'What is the longest-running Broadway show?', 'The Phantom of the Opera', 'Cats', 'The Phantom of the Opera', 'Les Misérables', 'Chicago', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Arts & Literature'), 'Who wrote "To Kill a Mockingbird"?', 'Harper Lee', 'Ernest Hemingway', 'Harper Lee', 'F. Scott Fitzgerald', 'John Steinbeck', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Arts & Literature'), 'What color is the famous "Blue Period" associated with?', 'Picasso', 'Van Gogh', 'Picasso', 'Monet', 'Matisse', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Arts & Literature'), 'Who wrote "Pride and Prejudice"?', 'Jane Austen', 'Emily Brontë', 'Jane Austen', 'Charlotte Brontë', 'George Eliot', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Arts & Literature'), 'What instrument has 88 keys?', 'Piano', 'Organ', 'Piano', 'Harpsichord', 'Accordion', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Arts & Literature'), 'Who sculpted "David"?', 'Michelangelo', 'Donatello', 'Michelangelo', 'Bernini', 'Rodin', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Arts & Literature'), 'What is the first book of the Bible?', 'Genesis', 'Exodus', 'Genesis', 'Leviticus', 'Psalms', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Arts & Literature'), 'Who wrote "The Great Gatsby"?', 'F. Scott Fitzgerald', 'Ernest Hemingway', 'F. Scott Fitzgerald', 'John Steinbeck', 'William Faulkner', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Arts & Literature'), 'What type of music is Mozart famous for?', 'Classical', 'Baroque', 'Classical', 'Romantic', 'Jazz', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Arts & Literature'), 'Who painted "The Last Supper"?', 'Leonardo da Vinci', 'Michelangelo', 'Leonardo da Vinci', 'Raphael', 'Caravaggio', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Arts & Literature'), 'What is the pen name of Samuel Clemens?', 'Mark Twain', 'Jack London', 'Mark Twain', 'O. Henry', 'Edgar Allan Poe', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Arts & Literature'), 'Who wrote "1984"?', 'George Orwell', 'Aldous Huxley', 'George Orwell', 'Ray Bradbury', 'Kurt Vonnegut', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Arts & Literature'), 'What is the art of paper folding called?', 'Origami', 'Kirigami', 'Origami', 'Ikebana', 'Calligraphy', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Arts & Literature'), 'Who wrote "The Odyssey"?', 'Homer', 'Virgil', 'Homer', 'Ovid', 'Sophocles', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Arts & Literature'), 'What is the name of Sherlock Holmes'' assistant?', 'Dr. Watson', 'Inspector Lestrade', 'Dr. Watson', 'Mycroft Holmes', 'Professor Moriarty', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Arts & Literature'), 'Who painted "The Scream"?', 'Edvard Munch', 'Vincent van Gogh', 'Edvard Munch', 'Gustav Klimt', 'Egon Schiele', 'rookie', 'tournament'),
+
+-- Pro Questions (20)
+((SELECT id FROM trivia_categories WHERE name = 'Arts & Literature'), 'Who composed "The Four Seasons"?', 'Antonio Vivaldi', 'Johann Sebastian Bach', 'Antonio Vivaldi', 'Mozart', 'Beethoven', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Arts & Literature'), 'What is the art movement of Salvador Dalí?', 'Surrealism', 'Cubism', 'Surrealism', 'Impressionism', 'Expressionism', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Arts & Literature'), 'Who wrote "Crime and Punishment"?', 'Fyodor Dostoevsky', 'Leo Tolstoy', 'Fyodor Dostoevsky', 'Anton Chekhov', 'Ivan Turgenev', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Arts & Literature'), 'What is the Sistine Chapel ceiling famous for?', 'Michelangelo''s frescoes', 'Leonardo''s paintings', 'Michelangelo''s frescoes', 'Raphael''s artwork', 'Bernini''s sculptures', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Arts & Literature'), 'Who wrote "The Canterbury Tales"?', 'Geoffrey Chaucer', 'William Shakespeare', 'Geoffrey Chaucer', 'Edmund Spenser', 'John Milton', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Arts & Literature'), 'What is the musical term for "very loud"?', 'Fortissimo', 'Pianissimo', 'Forte', 'Fortissimo', 'Mezzo-forte', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Arts & Literature'), 'Who painted "Guernica"?', 'Pablo Picasso', 'Salvador Dalí', 'Pablo Picasso', 'Joan Miró', 'Henri Matisse', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Arts & Literature'), 'What is James Joyce''s most famous novel?', 'Ulysses', 'Dubliners', 'Ulysses', 'Finnegans Wake', 'Portrait of the Artist', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Arts & Literature'), 'Who composed "The Magic Flute"?', 'Wolfgang Amadeus Mozart', 'Ludwig van Beethoven', 'Wolfgang Amadeus Mozart', 'Joseph Haydn', 'Franz Schubert', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Arts & Literature'), 'What art style is characterized by geometric shapes?', 'Cubism', 'Impressionism', 'Cubism', 'Surrealism', 'Fauvism', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Arts & Literature'), 'Who wrote "One Hundred Years of Solitude"?', 'Gabriel García Márquez', 'Jorge Luis Borges', 'Gabriel García Márquez', 'Pablo Neruda', 'Octavio Paz', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Arts & Literature'), 'What is the real name of Dr. Seuss?', 'Theodor Geisel', 'Theodore Roosevelt', 'Theodor Geisel', 'Theodore Taylor', 'Thomas Seuss', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Arts & Literature'), 'Who painted "American Gothic"?', 'Grant Wood', 'Edward Hopper', 'Grant Wood', 'Andrew Wyeth', 'Norman Rockwell', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Arts & Literature'), 'What is the poetic meter of Shakespeare''s sonnets?', 'Iambic Pentameter', 'Trochaic Tetrameter', 'Iambic Pentameter', 'Dactylic Hexameter', 'Anapestic Tetrameter', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Arts & Literature'), 'Who wrote "The Brothers Karamazov"?', 'Fyodor Dostoevsky', 'Leo Tolstoy', 'Fyodor Dostoevsky', 'Anton Chekhov', 'Nikolai Gogol', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Arts & Literature'), 'What is a haiku''s syllable pattern?', '5-7-5', '7-5-7', '5-7-5', '5-5-7', '7-7-5', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Arts & Literature'), 'Who composed "Ride of the Valkyries"?', 'Richard Wagner', 'Johannes Brahms', 'Richard Wagner', 'Franz Liszt', 'Gustav Mahler', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Arts & Literature'), 'What is the Greek term for excessive pride?', 'Hubris', 'Pathos', 'Hubris', 'Ethos', 'Logos', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Arts & Literature'), 'Who wrote "The Divine Comedy"?', 'Dante Alighieri', 'Petrarch', 'Dante Alighieri', 'Boccaccio', 'Virgil', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Arts & Literature'), 'What is pointillism?', 'Painting with dots', 'Painting with lines', 'Painting with dots', 'Painting with triangles', 'Painting with squares', 'pro', 'tournament'),
+
+-- Legend Questions (10)
+((SELECT id FROM trivia_categories WHERE name = 'Arts & Literature'), 'What is the Dewey Decimal Classification for philosophy?', '100-199', '000-099', '100-199', '200-299', '300-399', 'legend', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Arts & Literature'), 'Who wrote "In Search of Lost Time" (7 volumes)?', 'Marcel Proust', 'James Joyce', 'Marcel Proust', 'Virginia Woolf', 'Thomas Mann', 'legend', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Arts & Literature'), 'What is the oldest known written story?', 'Epic of Gilgamesh', 'Iliad', 'Epic of Gilgamesh', 'Odyssey', 'Mahabharata', 'legend', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Arts & Literature'), 'Which Beethoven symphony is known as the "Choral Symphony"?', 'Symphony No. 9', 'Symphony No. 5', 'Symphony No. 9', 'Symphony No. 6', 'Symphony No. 3', 'legend', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Arts & Literature'), 'What is the technique of painting on wet plaster?', 'Fresco', 'Tempera', 'Fresco', 'Encaustic', 'Gouache', 'legend', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Arts & Literature'), 'Who wrote the play "Waiting for Godot"?', 'Samuel Beckett', 'Eugene Ionesco', 'Samuel Beckett', 'Harold Pinter', 'Tom Stoppard', 'legend', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Arts & Literature'), 'What is the golden ratio approximately?', '1.618', '1.414', '1.618', '2.718', '3.141', 'legend', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Arts & Literature'), 'Which poet wrote "The Waste Land"?', 'T.S. Eliot', 'Ezra Pound', 'T.S. Eliot', 'W.H. Auden', 'Dylan Thomas', 'legend', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Arts & Literature'), 'What is the earliest surviving tragedy by Aeschylus?', 'The Persians', 'Agamemnon', 'The Persians', 'Prometheus Bound', 'Seven Against Thebes', 'legend', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Arts & Literature'), 'Who painted "The Night Watch"?', 'Rembrandt', 'Vermeer', 'Rembrandt', 'Rubens', 'Van Dyck', 'legend', 'tournament');

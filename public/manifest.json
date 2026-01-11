@@ -1,0 +1,48 @@
+{
+  "name": "Pi Ride - Traveling Made Easy",
+  "short_name": "Pi Ride",
+  "description": "Rides, Rentals, Transit & More – Pay with Pi, Book Anywhere",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#8b5cf6",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/images/pi-ride-logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/pi-ride-logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["travel", "transportation", "lifestyle"],
+  "shortcuts": [
+    {
+      "name": "Book a Ride",
+      "short_name": "Ride",
+      "description": "Book a ride instantly",
+      "url": "/?action=ride",
+      "icons": [{ "src": "/images/pi-ride-logo.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Marketplace",
+      "short_name": "Shop",
+      "description": "Browse marketplace",
+      "url": "/marketplace",
+      "icons": [{ "src": "/images/pi-ride-logo.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Pi Arcade Legends",
+      "short_name": "Arcade",
+      "description": "Play retro games and win Pi",
+      "url": "/arcade",
+      "icons": [{ "src": "/arcade-icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}

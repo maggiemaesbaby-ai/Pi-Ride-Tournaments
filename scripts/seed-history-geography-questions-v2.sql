@@ -1,0 +1,60 @@
+-- IQ Arena - History & Geography Questions (Batch 2)
+-- 50 additional questions with mixed difficulty levels
+
+INSERT INTO trivia_questions (category_id, question, correct_answer, option_a, option_b, option_c, option_d, difficulty, game_mode) VALUES
+
+-- Rookie Questions (20)
+((SELECT id FROM trivia_categories WHERE name = 'History & Geography'), 'What is the capital of Italy?', 'Rome', 'Milan', 'Rome', 'Venice', 'Florence', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'History & Geography'), 'Which ocean is the largest?', 'Pacific', 'Atlantic', 'Pacific', 'Indian', 'Arctic', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'History & Geography'), 'Who was the first President of the United States?', 'George Washington', 'Thomas Jefferson', 'George Washington', 'John Adams', 'Benjamin Franklin', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'History & Geography'), 'What is the longest river in the world?', 'Nile', 'Amazon', 'Nile', 'Mississippi', 'Yangtze', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'History & Geography'), 'Which country is known as the Land of the Rising Sun?', 'Japan', 'China', 'Japan', 'Korea', 'Thailand', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'History & Geography'), 'What year did World War I begin?', '1914', '1912', '1914', '1916', '1918', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'History & Geography'), 'Which continent is the Sahara Desert located on?', 'Africa', 'Asia', 'Africa', 'Australia', 'South America', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'History & Geography'), 'What is the capital of Spain?', 'Madrid', 'Barcelona', 'Madrid', 'Seville', 'Valencia', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'History & Geography'), 'Who built the pyramids?', 'Ancient Egyptians', 'Romans', 'Ancient Egyptians', 'Greeks', 'Babylonians', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'History & Geography'), 'Which country has the most population?', 'China', 'India', 'China', 'USA', 'Indonesia', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'History & Geography'), 'What is the smallest country in the world?', 'Vatican City', 'Monaco', 'Vatican City', 'San Marino', 'Liechtenstein', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'History & Geography'), 'Which city is the Eiffel Tower located in?', 'Paris', 'London', 'Paris', 'Rome', 'Berlin', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'History & Geography'), 'What year did the Titanic sink?', '1912', '1910', '1912', '1914', '1916', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'History & Geography'), 'Which country is the Great Wall located in?', 'China', 'Japan', 'China', 'Korea', 'Mongolia', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'History & Geography'), 'What is the capital of Canada?', 'Ottawa', 'Toronto', 'Montreal', 'Ottawa', 'Vancouver', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'History & Geography'), 'Which empire was ruled by Julius Caesar?', 'Roman Empire', 'Greek Empire', 'Roman Empire', 'Persian Empire', 'Ottoman Empire', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'History & Geography'), 'What is the largest desert in the world?', 'Antarctica', 'Sahara', 'Antarctica', 'Gobi', 'Arabian', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'History & Geography'), 'Which river flows through Egypt?', 'Nile', 'Tigris', 'Nile', 'Euphrates', 'Jordan', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'History & Geography'), 'What year did the Berlin Wall fall?', '1989', '1985', '1989', '1991', '1987', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'History & Geography'), 'Which country gifted the Statue of Liberty to the USA?', 'France', 'England', 'France', 'Spain', 'Italy', 'rookie', 'tournament'),
+
+-- Pro Questions (20)
+((SELECT id FROM trivia_categories WHERE name = 'History & Geography'), 'Who was the first emperor of Rome?', 'Augustus', 'Julius Caesar', 'Augustus', 'Nero', 'Caligula', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'History & Geography'), 'What is the capital of Kazakhstan?', 'Astana', 'Almaty', 'Astana', 'Bishkek', 'Tashkent', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'History & Geography'), 'In which year did Christopher Columbus first reach the Americas?', '1492', '1490', '1492', '1494', '1500', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'History & Geography'), 'Which battle is considered the turning point of WWII in Europe?', 'Stalingrad', 'D-Day', 'Stalingrad', 'Battle of Britain', 'El Alamein', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'History & Geography'), 'What is the deepest ocean trench?', 'Mariana Trench', 'Puerto Rico Trench', 'Mariana Trench', 'Java Trench', 'Philippine Trench', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'History & Geography'), 'Which empire was Genghis Khan the founder of?', 'Mongol Empire', 'Ottoman Empire', 'Mongol Empire', 'Persian Empire', 'Chinese Empire', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'History & Geography'), 'What is the longest mountain range in the world?', 'Andes', 'Himalayas', 'Andes', 'Rockies', 'Alps', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'History & Geography'), 'Which country has the most UNESCO World Heritage Sites?', 'Italy', 'China', 'Italy', 'Spain', 'France', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'History & Geography'), 'What year did the Russian Revolution occur?', '1917', '1914', '1917', '1920', '1922', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'History & Geography'), 'Which city was formerly known as Constantinople?', 'Istanbul', 'Athens', 'Istanbul', 'Alexandria', 'Cairo', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'History & Geography'), 'What is the highest mountain in Africa?', 'Kilimanjaro', 'Kenya', 'Kilimanjaro', 'Atlas', 'Rwenzori', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'History & Geography'), 'Which treaty ended World War I?', 'Treaty of Versailles', 'Treaty of Paris', 'Treaty of Versailles', 'Treaty of Ghent', 'Treaty of Westphalia', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'History & Geography'), 'What is the capital of Mongolia?', 'Ulaanbaatar', 'Astana', 'Ulaanbaatar', 'Bishkek', 'Dushanbe', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'History & Geography'), 'Which civilization built Machu Picchu?', 'Inca', 'Maya', 'Inca', 'Aztec', 'Olmec', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'History & Geography'), 'What is the largest lake in the world by surface area?', 'Caspian Sea', 'Superior', 'Caspian Sea', 'Victoria', 'Huron', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'History & Geography'), 'Who was the longest-reigning British monarch?', 'Elizabeth II', 'Victoria', 'Elizabeth II', 'George III', 'Henry VIII', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'History & Geography'), 'Which city is built on seven hills?', 'Rome', 'Athens', 'Rome', 'Jerusalem', 'Lisbon', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'History & Geography'), 'What year did India gain independence from Britain?', '1947', '1945', '1947', '1950', '1952', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'History & Geography'), 'Which country has the most active volcanoes?', 'Indonesia', 'Japan', 'Indonesia', 'Philippines', 'USA', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'History & Geography'), 'What is the oldest continuously inhabited city?', 'Damascus', 'Jericho', 'Damascus', 'Athens', 'Rome', 'pro', 'tournament'),
+
+-- Legend Questions (10)
+((SELECT id FROM trivia_categories WHERE name = 'History & Geography'), 'What year was the Battle of Hastings?', '1066', '1056', '1066', '1076', '1086', 'legend', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'History & Geography'), 'Which empire had the largest contiguous land area?', 'Mongol Empire', 'Roman Empire', 'Mongol Empire', 'British Empire', 'Russian Empire', 'legend', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'History & Geography'), 'What is the exact latitude of the Equator?', '0 degrees', '0 degrees', '1 degree', '5 degrees', '10 degrees', 'legend', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'History & Geography'), 'Which treaty divided the New World between Spain and Portugal?', 'Treaty of Tordesillas', 'Treaty of Madrid', 'Treaty of Tordesillas', 'Treaty of Zaragoza', 'Treaty of Utrecht', 'legend', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'History & Geography'), 'What is the antipode of Madrid, Spain?', 'Near New Zealand', 'Australia', 'Near New Zealand', 'Argentina', 'Pacific Ocean', 'legend', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'History & Geography'), 'Which pharaoh built the Great Pyramid of Giza?', 'Khufu', 'Ramses II', 'Khufu', 'Tutankhamun', 'Cleopatra', 'legend', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'History & Geography'), 'What year did the Byzantine Empire fall?', '1453', '1400', '1453', '1500', '1350', 'legend', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'History & Geography'), 'Which country has the most time zones?', 'France', 'Russia', 'France', 'USA', 'UK', 'legend', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'History & Geography'), 'What is the smallest independent state by area?', 'Vatican City', 'Monaco', 'Vatican City', 'San Marino', 'Nauru', 'legend', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'History & Geography'), 'Which city was the capital of the Inca Empire?', 'Cusco', 'Lima', 'Cusco', 'Quito', 'Machu Picchu', 'legend', 'tournament');

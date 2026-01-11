@@ -1,0 +1,43 @@
+const GameSettings = {
+  playerSpeed: 300,
+  bulletSpeed: 600,
+  initialLives: 3,
+  weapons: {
+    basic: {
+      name: "LASER",
+      fireRate: 200,
+      bulletSpeed: 600,
+      damage: 1,
+      color: 0x00ffff,
+      particleColor: 0x00ffff,
+      sound: "laser-sound",
+    },
+    plasma: {
+      name: "PLASMA",
+      fireRate: 400,
+      bulletSpeed: 500,
+      damage: 3,
+      color: 0xff00ff,
+      particleColor: 0xff00ff,
+      sound: "plasma-sound",
+    },
+    missile: {
+      name: "MISSILE",
+      fireRate: 800,
+      bulletSpeed: 400,
+      damage: 5,
+      color: 0xff6600,
+      particleColor: 0xff6600,
+      sound: "missile-sound",
+    },
+    beam: {
+      name: "BEAM",
+      fireRate: 100,
+      bulletSpeed: 0,
+      damage: 2,
+      color: 0x66ff66,
+      particleColor: 0x66ff66,
+      sound: "laser-sound",
+    },
+  },
+}

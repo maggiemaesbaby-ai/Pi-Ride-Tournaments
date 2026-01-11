@@ -39,20 +39,20 @@ Pi Ride is a comprehensive mobility platform built for the Pi Network ecosystem,
 ### Installation
 
 1. Clone the repository:
-\`\`\`bash
+```bash
 git clone https://github.com/yourusername/pi-ride.git
 cd pi-ride
-\`\`\`
+```
 
 2. Install dependencies:
-\`\`\`bash
+```bash
 npm install
-\`\`\`
+```
 
 3. Run the development server:
-\`\`\`bash
+```bash
 npm run dev
-\`\`\`
+```
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
@@ -67,7 +67,7 @@ To use in production:
 
 ## Project Structure
 
-\`\`\`
+```
 pi-ride/
 ├── app/
 │   ├── dashboard/          # User dashboard
@@ -85,18 +85,18 @@ pi-ride/
 ├── hooks/
 │   └── use-pi-wallet.tsx   # Pi Network wallet hook
 └── README.md
-\`\`\`
+```
 
 ## Pi Network Integration
 
 ### Authentication
-\`\`\`typescript
+```typescript
 const { connect } = usePiWallet();
 await connect();
-\`\`\`
+```
 
 ### Creating Payments
-\`\`\`typescript
+```typescript
 // Payment data
 const paymentData = {
   amount: 10.5,
@@ -130,7 +130,7 @@ window.Pi.createPayment(paymentData, {
     console.error('Payment error:', error);
   }
 });
-\`\`\`
+```
 
 ## Deployment
 
@@ -148,9 +148,9 @@ The app will be automatically deployed and optimized for production.
 
 Add this environment variable to your Vercel project (in the Vars section of the in-chat sidebar):
 
-\`\`\`
+```
 PI_API_KEY=your_api_key_from_pi_developer_portal
-\`\`\`
+```
 
 **How to get your API key:**
 1. Go to https://develop.pi/apps

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centipede</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/phaser-ce@2.14.0/build/phaser.min.js"></script>
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+    </div>
+    <script src="game.js"></script>
+    <script>
+        let lastScore = 0;
+        let gameOverSent = false;
+        
+        // Override score updates to send to parent
+        setInterval(() => {
+            if (typeof score !== 'undefined' && score !== lastScore) {
+                lastScore = score;
+                window.parent.postMessage({
+                    type: 'GAME_SCORE_UPDATE',
+                    score: score
+                }, '*');
+            }
+            
+            // Check for game over
+            if (typeof lives !== 'undefined' && lives < 0 && !gameOverSent) {
+                gameOverSent = true;
+                window.parent.postMessage({
+                    type: 'GAME_OVER',
+                    score: score || 0
+                }, '*');
+            }
+        }, 100);
+
+        // Listen for pause/resume from parent
+        window.addEventListener('message', (event) => {
+            if (event.data.type === 'PAUSE_GAME') {
+                if (typeof game !== 'undefined') {
+                    game.paused = true;
+                }
+            } else if (event.data.type === 'RESUME_GAME') {
+                if (typeof game !== 'undefined') {
+                    game.paused = false;
+                }
+            }
+        });
+
+        // Send ready signal when game loads
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                window.parent.postMessage({
+                    type: 'GAME_READY'
+                }, '*');
+            }, 1000);
+        });
+    </script>
+</body>
+</html>

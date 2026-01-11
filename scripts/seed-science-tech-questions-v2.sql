@@ -1,0 +1,60 @@
+-- IQ Arena - Science & Tech Questions (Batch 2)
+-- 50 additional questions with mixed difficulty levels
+
+INSERT INTO trivia_questions (category_id, question, correct_answer, option_a, option_b, option_c, option_d, difficulty, game_mode) VALUES
+
+-- Rookie Questions (20)
+((SELECT id FROM trivia_categories WHERE name = 'Science & Tech'), 'What does CPU stand for?', 'Central Processing Unit', 'Central Processing Unit', 'Computer Personal Unit', 'Central Program Unit', 'Core Processing Unit', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Science & Tech'), 'What is H2O commonly known as?', 'Water', 'Water', 'Hydrogen', 'Oxygen', 'Peroxide', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Science & Tech'), 'How many planets are in our solar system?', 'Eight', 'Seven', 'Eight', 'Nine', 'Ten', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Science & Tech'), 'What is the symbol for potassium?', 'K', 'P', 'K', 'Po', 'Pt', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Science & Tech'), 'Which gas do plants absorb from the atmosphere?', 'Carbon Dioxide', 'Oxygen', 'Carbon Dioxide', 'Nitrogen', 'Hydrogen', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Science & Tech'), 'What is the largest planet in our solar system?', 'Jupiter', 'Saturn', 'Jupiter', 'Neptune', 'Earth', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Science & Tech'), 'What does DNA stand for?', 'Deoxyribonucleic Acid', 'Deoxyribonucleic Acid', 'Dual Nuclear Acid', 'Dynamic Nuclear Acid', 'Digital Nuclear Acid', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Science & Tech'), 'Which planet is known as the Red Planet?', 'Mars', 'Venus', 'Mars', 'Mercury', 'Jupiter', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Science & Tech'), 'What is the speed of light?', '299,792 km/s', '150,000 km/s', '299,792 km/s', '500,000 km/s', '1,000,000 km/s', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Science & Tech'), 'What does USB stand for?', 'Universal Serial Bus', 'Universal Serial Bus', 'United System Bus', 'Universal System Board', 'United Serial Board', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Science & Tech'), 'Which element is the most abundant in the universe?', 'Hydrogen', 'Oxygen', 'Hydrogen', 'Carbon', 'Helium', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Science & Tech'), 'What is the boiling point of water in Fahrenheit?', '212°F', '100°F', '212°F', '180°F', '200°F', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Science & Tech'), 'What is the name of Earth''s natural satellite?', 'Moon', 'Luna', 'Moon', 'Satellite', 'Titan', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Science & Tech'), 'Which scientist is famous for E=mc²?', 'Albert Einstein', 'Isaac Newton', 'Albert Einstein', 'Galileo', 'Tesla', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Science & Tech'), 'What type of animal is a dolphin?', 'Mammal', 'Fish', 'Mammal', 'Reptile', 'Amphibian', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Science & Tech'), 'How many bones are in the human body?', '206', '198', '206', '214', '250', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Science & Tech'), 'What is the chemical formula for table salt?', 'NaCl', 'NaCl', 'HCl', 'KCl', 'H2O', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Science & Tech'), 'Which organ pumps blood through the body?', 'Heart', 'Liver', 'Heart', 'Lungs', 'Kidney', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Science & Tech'), 'What does WWW stand for?', 'World Wide Web', 'World Wide Web', 'Wide World Web', 'Web Wide World', 'World Web Wide', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Science & Tech'), 'Which planet has rings around it?', 'Saturn', 'Jupiter', 'Saturn', 'Uranus', 'Neptune', 'rookie', 'tournament'),
+
+-- Pro Questions (20)
+((SELECT id FROM trivia_categories WHERE name = 'Science & Tech'), 'What is the powerhouse of the cell?', 'Mitochondria', 'Nucleus', 'Mitochondria', 'Ribosome', 'Chloroplast', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Science & Tech'), 'What is the most abundant element in Earth''s crust?', 'Oxygen', 'Silicon', 'Oxygen', 'Iron', 'Aluminum', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Science & Tech'), 'Who invented the first practical telephone?', 'Alexander Graham Bell', 'Thomas Edison', 'Alexander Graham Bell', 'Nikola Tesla', 'Guglielmo Marconi', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Science & Tech'), 'What is the study of fungi called?', 'Mycology', 'Biology', 'Mycology', 'Botany', 'Zoology', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Science & Tech'), 'What is the pH of pure water?', '7', '5', '7', '9', '10', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Science & Tech'), 'Which programming language is known as the "mother of all languages"?', 'C', 'FORTRAN', 'C', 'Assembly', 'COBOL', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Science & Tech'), 'What is the name of the largest moon of Saturn?', 'Titan', 'Europa', 'Titan', 'Io', 'Ganymede', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Science & Tech'), 'How many chromosomes do humans have?', '46', '23', '46', '48', '44', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Science & Tech'), 'What is the SI unit of force?', 'Newton', 'Joule', 'Newton', 'Watt', 'Pascal', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Science & Tech'), 'Which cloud computing company created AWS?', 'Amazon', 'Microsoft', 'Amazon', 'Google', 'IBM', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Science & Tech'), 'What is the atomic number of carbon?', '6', '4', '6', '8', '12', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Science & Tech'), 'What does GUI stand for in computing?', 'Graphical User Interface', 'General User Interface', 'Graphical User Interface', 'Global User Interface', 'Generic User Input', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Science & Tech'), 'Which particle has no electric charge?', 'Neutron', 'Electron', 'Neutron', 'Proton', 'Positron', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Science & Tech'), 'What is the study of earthquakes called?', 'Seismology', 'Geology', 'Seismology', 'Meteorology', 'Volcanology', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Science & Tech'), 'Which planet rotates on its side?', 'Uranus', 'Venus', 'Uranus', 'Neptune', 'Mars', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Science & Tech'), 'What is the name of the first artificial satellite?', 'Sputnik 1', 'Explorer 1', 'Sputnik 1', 'Vanguard 1', 'Apollo 1', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Science & Tech'), 'How many teeth does an adult human have?', '32', '28', '32', '30', '34', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Science & Tech'), 'What is the chemical symbol for silver?', 'Ag', 'Si', 'Ag', 'Au', 'S', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Science & Tech'), 'Which gas makes up most of Earth''s atmosphere?', 'Nitrogen', 'Oxygen', 'Nitrogen', 'Carbon Dioxide', 'Argon', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Science & Tech'), 'What is the smallest unit of life?', 'Cell', 'Atom', 'Cell', 'Molecule', 'Organ', 'pro', 'tournament'),
+
+-- Legend Questions (10)
+((SELECT id FROM trivia_categories WHERE name = 'Science & Tech'), 'What is Planck''s constant approximately?', '6.626×10⁻³⁴ J·s', '3.14×10⁻³⁴ J·s', '6.626×10⁻³⁴ J·s', '9.81×10⁻³⁴ J·s', '1.602×10⁻³⁴ J·s', 'legend', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Science & Tech'), 'What is the name of the theorem that relates energy and time uncertainty?', 'Heisenberg Uncertainty Principle', 'Schrödinger Equation', 'Heisenberg Uncertainty Principle', 'Pauli Exclusion', 'Fermat''s Theorem', 'legend', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Science & Tech'), 'Which element has the highest electronegativity?', 'Fluorine', 'Oxygen', 'Fluorine', 'Chlorine', 'Nitrogen', 'legend', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Science & Tech'), 'What is the Schwarzschild radius of a black hole with 1 solar mass?', '~3 km', '~1 km', '~3 km', '~10 km', '~100 km', 'legend', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Science & Tech'), 'What is the fine structure constant approximately?', '1/137', '1/100', '1/137', '1/200', '1/50', 'legend', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Science & Tech'), 'Which programming paradigm uses lambda calculus?', 'Functional Programming', 'Object-Oriented', 'Functional Programming', 'Procedural', 'Declarative', 'legend', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Science & Tech'), 'What is the half-life of Uranium-235 in years?', '704 million', '100 million', '704 million', '1 billion', '5 billion', 'legend', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Science & Tech'), 'What is the name of the first quantum computer?', 'D-Wave One', 'IBM Q', 'D-Wave One', 'Sycamore', 'Quantum Alpha', 'legend', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Science & Tech'), 'What is the Chandrasekhar limit in solar masses?', '1.4', '1.0', '1.4', '2.0', '0.8', 'legend', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Science & Tech'), 'Which mathematician proved Fermat''s Last Theorem?', 'Andrew Wiles', 'Pierre de Fermat', 'Andrew Wiles', 'Leonhard Euler', 'Carl Gauss', 'legend', 'tournament');

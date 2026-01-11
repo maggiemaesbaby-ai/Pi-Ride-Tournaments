@@ -17,10 +17,10 @@ This document provides information on integrating real accommodation booking and
 - Request API access (requires business verification)
 
 **Environment Variables:**
-\`\`\`
+```
 BOOKING_COM_API_KEY=your_api_key_here
 BOOKING_COM_API_SECRET=your_api_secret_here
-\`\`\`
+```
 
 **API Endpoints:**
 - Search: https://supply-xml.booking.com/hotels/xml/search
@@ -41,10 +41,10 @@ BOOKING_COM_API_SECRET=your_api_secret_here
 - Request production access
 
 **Environment Variables:**
-\`\`\`
+```
 EXPEDIA_API_KEY=your_api_key_here
 EXPEDIA_SECRET=your_secret_here
-\`\`\`
+```
 
 **Key Features:**
 - Shopping API for live rates
@@ -78,10 +78,10 @@ EXPEDIA_SECRET=your_secret_here
 - Email: partnerships@allianz-assistance.com
 
 **Environment Variables:**
-\`\`\`
+```
 ALLIANZ_PARTNER_ID=your_partner_id
 ALLIANZ_API_KEY=your_api_key
-\`\`\`
+```
 
 **Features:**
 - Single-trip and annual plans
@@ -103,10 +103,10 @@ ALLIANZ_API_KEY=your_api_key
 - Requires business verification
 
 **Environment Variables:**
-\`\`\`
+```
 AIG_PARTNER_ID=your_partner_id
 AIG_API_KEY=your_api_key
-\`\`\`
+```
 
 ---
 
@@ -123,10 +123,10 @@ AIG_API_KEY=your_api_key
 - Request API credentials
 
 **Environment Variables:**
-\`\`\`
+```
 NIB_API_KEY=your_api_key
 NIB_CLIENT_ID=your_client_id
-\`\`\`
+```
 
 **Documentation:** https://developer.nibtravelinsurance.com
 
@@ -153,11 +153,11 @@ NIB_CLIENT_ID=your_client_id
 ## Pi Ride Fee Implementation
 
 **For Travel Insurance (5% fee):**
-\`\`\`typescript
+```typescript
 const basePrice = insuranceQuote.price
 const piRideFee = basePrice * 0.05
 const totalPrice = basePrice + piRideFee
-\`\`\`
+```
 
 **Display to users:**
 - Show base price clearly

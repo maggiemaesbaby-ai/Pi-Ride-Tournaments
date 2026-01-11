@@ -1,0 +1,60 @@
+-- IQ Arena - Sports Questions (Batch 2)
+-- 50 additional questions with mixed difficulty levels
+
+INSERT INTO trivia_questions (category_id, question, correct_answer, option_a, option_b, option_c, option_d, difficulty, game_mode) VALUES
+
+-- Rookie Questions (20)
+((SELECT id FROM trivia_categories WHERE name = 'Sports'), 'How many players are on a basketball team on the court?', 'Five', 'Five', 'Six', 'Seven', 'Four', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Sports'), 'What sport is associated with Wimbledon?', 'Tennis', 'Tennis', 'Golf', 'Cricket', 'Football', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Sports'), 'In which sport would you perform a slam dunk?', 'Basketball', 'Volleyball', 'Basketball', 'Handball', 'Tennis', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Sports'), 'How many holes are on a standard golf course?', '18', '9', '18', '27', '36', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Sports'), 'What color is the center of an archery target?', 'Gold/Yellow', 'Red', 'Gold/Yellow', 'Blue', 'White', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Sports'), 'How many points is a touchdown worth in American football?', 'Six', 'Three', 'Six', 'Seven', 'Four', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Sports'), 'Which country hosted the 2016 Summer Olympics?', 'Brazil', 'China', 'Brazil', 'Russia', 'UK', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Sports'), 'What is the diameter of a basketball hoop in inches?', '18', '15', '18', '20', '24', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Sports'), 'In baseball, how many strikes result in an out?', 'Three', 'Two', 'Three', 'Four', 'Five', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Sports'), 'Which sport uses a puck?', 'Ice Hockey', 'Field Hockey', 'Ice Hockey', 'Lacrosse', 'Polo', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Sports'), 'How many yards is a football field (without end zones)?', '100', '80', '100', '120', '90', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Sports'), 'What is the maximum score in a single frame of bowling?', '30', '20', '30', '40', '50', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Sports'), 'Which country won the first FIFA World Cup in 1930?', 'Uruguay', 'Brazil', 'Uruguay', 'Argentina', 'Italy', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Sports'), 'In tennis, what is a score of zero called?', 'Love', 'Zero', 'Love', 'Nil', 'Deuce', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Sports'), 'How many Olympic rings are there?', 'Five', 'Four', 'Five', 'Six', 'Seven', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Sports'), 'What sport is known as "the beautiful game"?', 'Soccer/Football', 'Basketball', 'Soccer/Football', 'Rugby', 'Cricket', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Sports'), 'How long is a marathon in miles?', '26.2', '20', '26.2', '30', '25', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Sports'), 'Which sport uses a shuttlecock?', 'Badminton', 'Tennis', 'Badminton', 'Squash', 'Volleyball', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Sports'), 'In which sport do players slide stones on ice?', 'Curling', 'Shuffleboard', 'Curling', 'Bowling', 'Ice Hockey', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Sports'), 'How many bases are on a baseball field?', 'Four', 'Three', 'Four', 'Five', 'Six', 'rookie', 'tournament'),
+
+-- Pro Questions (20)
+((SELECT id FROM trivia_categories WHERE name = 'Sports'), 'Who holds the record for most Olympic gold medals?', 'Michael Phelps', 'Usain Bolt', 'Michael Phelps', 'Carl Lewis', 'Mark Spitz', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Sports'), 'In which year was the first Super Bowl played?', '1967', '1960', '1967', '1970', '1965', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Sports'), 'Which tennis player has won the most Grand Slam titles (male)?', 'Novak Djokovic', 'Roger Federer', 'Rafael Nadal', 'Novak Djokovic', 'Pete Sampras', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Sports'), 'What is the national sport of Canada?', 'Lacrosse', 'Ice Hockey', 'Lacrosse', 'Basketball', 'Curling', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Sports'), 'Which boxer was known as "The Greatest"?', 'Muhammad Ali', 'Mike Tyson', 'Muhammad Ali', 'Sugar Ray Leonard', 'Floyd Mayweather', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Sports'), 'How many times has Brazil won the FIFA World Cup?', 'Five', 'Four', 'Five', 'Six', 'Three', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Sports'), 'In which sport is the Ryder Cup contested?', 'Golf', 'Tennis', 'Golf', 'Cricket', 'Sailing', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Sports'), 'What is the height of an NBA basketball hoop in feet?', '10', '9', '10', '11', '12', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Sports'), 'Which country has won the most Cricket World Cups?', 'Australia', 'India', 'Australia', 'West Indies', 'England', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Sports'), 'Who is the fastest man in the world (100m record)?', 'Usain Bolt', 'Usain Bolt', 'Carl Lewis', 'Justin Gatlin', 'Tyson Gay', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Sports'), 'How many majors has Tiger Woods won?', '15', '12', '15', '18', '20', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Sports'), 'In which sport would you find a pommel horse?', 'Gymnastics', 'Wrestling', 'Gymnastics', 'Polo', 'Equestrian', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Sports'), 'Which NBA team has won the most championships?', 'Boston Celtics', 'Los Angeles Lakers', 'Boston Celtics', 'Chicago Bulls', 'Golden State Warriors', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Sports'), 'What is the maximum break in snooker?', '147', '100', '147', '180', '200', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Sports'), 'Which Formula 1 driver has won the most championships?', 'Lewis Hamilton/Michael Schumacher', 'Ayrton Senna', 'Lewis Hamilton/Michael Schumacher', 'Sebastian Vettel', 'Alain Prost', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Sports'), 'How many players are on a rugby union team?', '15', '11', '13', '15', '17', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Sports'), 'Which cyclist has won the most Tour de France titles?', 'Lance Armstrong (stripped)', 'Eddy Merckx', 'Lance Armstrong (stripped)', 'Miguel Indurain', 'Chris Froome', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Sports'), 'What is the diameter of a soccer ball in inches?', '8.65', '7.5', '8.65', '9.5', '10', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Sports'), 'In which year were women first allowed to compete in the Olympics?', '1900', '1896', '1900', '1920', '1950', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Sports'), 'Which country won the first Rugby World Cup?', 'New Zealand', 'Australia', 'New Zealand', 'South Africa', 'England', 'pro', 'tournament'),
+
+-- Legend Questions (10)
+((SELECT id FROM trivia_categories WHERE name = 'Sports'), 'What is the record for most goals in a single FIFA World Cup?', '13 (Just Fontaine)', '10', '13 (Just Fontaine)', '15', '11', 'legend', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Sports'), 'Who was the first gymnast to score a perfect 10?', 'Nadia Comăneci', 'Olga Korbut', 'Nadia Comăneci', 'Mary Lou Retton', 'Simone Biles', 'legend', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Sports'), 'What is the fastest serve ever recorded in tennis (mph)?', '163.7', '150.5', '163.7', '175.2', '155.3', 'legend', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Sports'), 'Which jockey has won the most Kentucky Derby races?', 'Eddie Arcaro', 'Bill Shoemaker', 'Eddie Arcaro', 'Willie Shoemaker', 'Johnny Longden', 'legend', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Sports'), 'What is the maximum weight of an Olympic shot put (men)?', '7.26 kg', '5 kg', '7.26 kg', '10 kg', '8 kg', 'legend', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Sports'), 'In which year was the three-point line introduced to the NBA?', '1979', '1975', '1979', '1983', '1985', 'legend', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Sports'), 'What is the record for most consecutive wins in boxing?', '87 (Julio César Chávez)', '70', '87 (Julio César Chávez)', '100', '50', 'legend', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Sports'), 'Which athlete has won the most Olympic medals overall?', 'Michael Phelps', 'Larisa Latynina', 'Michael Phelps', 'Paavo Nurmi', 'Carl Lewis', 'legend', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Sports'), 'What is the world record for javelin throw (men) in meters?', '98.48', '85.5', '90.2', '98.48', '105.3', 'legend', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Sports'), 'Which team has won the most Stanley Cups?', 'Montreal Canadiens', 'Toronto Maple Leafs', 'Montreal Canadiens', 'Detroit Red Wings', 'Boston Bruins', 'legend', 'tournament');

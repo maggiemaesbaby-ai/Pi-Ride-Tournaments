@@ -1,0 +1,60 @@
+-- IQ Arena - General Knowledge Questions (Batch 2)
+-- 50 additional questions with mixed difficulty levels
+
+INSERT INTO trivia_questions (category_id, question, correct_answer, option_a, option_b, option_c, option_d, difficulty, game_mode) VALUES
+
+-- Rookie Questions (20)
+((SELECT id FROM trivia_categories WHERE name = 'General Knowledge'), 'What is the largest ocean on Earth?', 'Pacific Ocean', 'Pacific Ocean', 'Atlantic Ocean', 'Indian Ocean', 'Arctic Ocean', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'General Knowledge'), 'How many sides does a hexagon have?', 'Six', 'Five', 'Six', 'Seven', 'Eight', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'General Knowledge'), 'What is the capital of Australia?', 'Canberra', 'Sydney', 'Melbourne', 'Canberra', 'Brisbane', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'General Knowledge'), 'Which planet is closest to the Sun?', 'Mercury', 'Venus', 'Mercury', 'Mars', 'Earth', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'General Knowledge'), 'What color is a sapphire?', 'Blue', 'Red', 'Green', 'Blue', 'Yellow', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'General Knowledge'), 'How many hours are in a day?', '24', '12', '24', '36', '48', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'General Knowledge'), 'What is the largest continent by land area?', 'Asia', 'Africa', 'Asia', 'North America', 'Europe', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'General Knowledge'), 'What is the freezing point of water in Celsius?', '0', '0', '32', '100', '-32', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'General Knowledge'), 'Which animal is known as the King of the Jungle?', 'Lion', 'Tiger', 'Lion', 'Elephant', 'Bear', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'General Knowledge'), 'What is the smallest prime number?', '2', '1', '2', '3', '5', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'General Knowledge'), 'How many legs does a spider have?', 'Eight', 'Six', 'Eight', 'Ten', 'Four', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'General Knowledge'), 'What is the main ingredient in guacamole?', 'Avocado', 'Tomato', 'Avocado', 'Pepper', 'Onion', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'General Knowledge'), 'Which ocean is the Bermuda Triangle located in?', 'Atlantic', 'Pacific', 'Atlantic', 'Indian', 'Arctic', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'General Knowledge'), 'What is the tallest mammal on Earth?', 'Giraffe', 'Elephant', 'Giraffe', 'Whale', 'Camel', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'General Knowledge'), 'How many strings does a standard guitar have?', 'Six', 'Four', 'Five', 'Six', 'Seven', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'General Knowledge'), 'What is the chemical symbol for gold?', 'Au', 'Ag', 'Au', 'Fe', 'Go', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'General Knowledge'), 'Which fruit is dried to make raisins?', 'Grapes', 'Plums', 'Grapes', 'Apricots', 'Figs', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'General Knowledge'), 'What is the largest island in the world?', 'Greenland', 'Iceland', 'Greenland', 'Madagascar', 'Borneo', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'General Knowledge'), 'How many teeth does an adult human typically have?', '32', '28', '30', '32', '34', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'General Knowledge'), 'What is the smallest country in the world?', 'Vatican City', 'Monaco', 'Vatican City', 'San Marino', 'Liechtenstein', 'rookie', 'tournament'),
+
+-- Pro Questions (20)
+((SELECT id FROM trivia_categories WHERE name = 'General Knowledge'), 'What is the most abundant gas in Earth''s atmosphere?', 'Nitrogen', 'Oxygen', 'Nitrogen', 'Carbon Dioxide', 'Argon', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'General Knowledge'), 'Which phobia is the fear of heights?', 'Acrophobia', 'Claustrophobia', 'Acrophobia', 'Arachnophobia', 'Agoraphobia', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'General Knowledge'), 'What is the currency of Japan?', 'Yen', 'Yuan', 'Yen', 'Won', 'Rupee', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'General Knowledge'), 'Which planet has the most moons?', 'Saturn', 'Jupiter', 'Saturn', 'Uranus', 'Neptune', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'General Knowledge'), 'What is the hardest natural substance on Earth?', 'Diamond', 'Gold', 'Diamond', 'Platinum', 'Titanium', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'General Knowledge'), 'In which year did World War II end?', '1945', '1943', '1944', '1945', '1946', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'General Knowledge'), 'What is the speed of light in km/s?', '300,000', '150,000', '300,000', '500,000', '1,000,000', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'General Knowledge'), 'Which country has the longest coastline?', 'Canada', 'Russia', 'Canada', 'Australia', 'Indonesia', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'General Knowledge'), 'What is the smallest bone in the human body?', 'Stapes', 'Tibia', 'Stapes', 'Femur', 'Radius', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'General Knowledge'), 'Which element has the atomic number 1?', 'Hydrogen', 'Helium', 'Hydrogen', 'Oxygen', 'Carbon', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'General Knowledge'), 'What is the largest desert in the world?', 'Antarctica', 'Sahara', 'Antarctica', 'Gobi', 'Arabian', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'General Knowledge'), 'How many time zones does Russia have?', '11', '7', '9', '11', '13', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'General Knowledge'), 'What is the most spoken native language in the world?', 'Mandarin Chinese', 'English', 'Spanish', 'Mandarin Chinese', 'Hindi', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'General Knowledge'), 'Which blood type is known as the universal donor?', 'O Negative', 'AB Positive', 'O Negative', 'A Positive', 'B Negative', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'General Knowledge'), 'What is the SI unit of electric current?', 'Ampere', 'Volt', 'Watt', 'Ampere', 'Ohm', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'General Knowledge'), 'Which country invented paper?', 'China', 'Egypt', 'India', 'China', 'Greece', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'General Knowledge'), 'What percentage of Earth''s surface is covered by water?', '71%', '60%', '71%', '80%', '50%', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'General Knowledge'), 'Which organ in the human body produces insulin?', 'Pancreas', 'Liver', 'Kidney', 'Pancreas', 'Spleen', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'General Knowledge'), 'What is the rarest blood type?', 'AB Negative', 'O Negative', 'B Negative', 'AB Negative', 'A Negative', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'General Knowledge'), 'How many bones are in the adult human body?', '206', '198', '206', '214', '220', 'pro', 'tournament'),
+
+-- Legend Questions (10)
+((SELECT id FROM trivia_categories WHERE name = 'General Knowledge'), 'What is the half-life of Carbon-14 in years?', '5,730', '3,500', '5,730', '10,000', '15,000', 'legend', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'General Knowledge'), 'Which country has won the most Nobel Prizes?', 'United States', 'United Kingdom', 'Germany', 'United States', 'France', 'legend', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'General Knowledge'), 'What is the Mohs hardness of talc?', '1', '1', '2', '3', '5', 'legend', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'General Knowledge'), 'What is the most densely populated country in the world?', 'Monaco', 'Singapore', 'Monaco', 'Vatican City', 'Malta', 'legend', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'General Knowledge'), 'Which amino acid is represented by the single letter K?', 'Lysine', 'Leucine', 'Lysine', 'Valine', 'Arginine', 'legend', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'General Knowledge'), 'What is the Avogadro constant approximately?', '6.022×10²³', '3.14×10²³', '6.022×10²³', '9.81×10²³', '1.602×10²³', 'legend', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'General Knowledge'), 'Which country has the highest GDP per capita?', 'Luxembourg', 'Switzerland', 'Luxembourg', 'Qatar', 'Singapore', 'legend', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'General Knowledge'), 'What is the largest known prime number as of 2024 (digits)?', '41 million digits', '10 million digits', '25 million digits', '41 million digits', '100 million digits', 'legend', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'General Knowledge'), 'Which element has the highest melting point?', 'Tungsten', 'Carbon', 'Tungsten', 'Titanium', 'Iron', 'legend', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'General Knowledge'), 'What is the speed of sound in air at sea level (m/s)?', '343', '300', '343', '400', '500', 'legend', 'tournament');

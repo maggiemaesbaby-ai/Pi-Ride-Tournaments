@@ -18,7 +18,7 @@ The Gas tab allows users to find nearby gas stations with real-time pricing info
    - `APIFY_API_TOKEN` - Your Apify API token
 
 **API Usage:**
-\`\`\`typescript
+```typescript
 // Example API call
 const response = await fetch('https://api.apify.com/v2/acts/scraped~gas-station-prices/runs', {
   method: 'POST',
@@ -30,7 +30,7 @@ const response = await fetch('https://api.apify.com/v2/acts/scraped~gas-station-
     zipcodes: ["90210"]
   })
 });
-\`\`\`
+```
 
 ### Option 2: GasBuddy Scraper API
 - **Provider**: Apify (stanvanrooy6/gasbuddy-scraper)

@@ -1,0 +1,60 @@
+-- IQ Arena - Entertainment Questions (Batch 2)
+-- 50 additional questions with mixed difficulty levels
+
+INSERT INTO trivia_questions (category_id, question, correct_answer, option_a, option_b, option_c, option_d, difficulty, game_mode) VALUES
+
+-- Rookie Questions (20)
+((SELECT id FROM trivia_categories WHERE name = 'Entertainment'), 'Who played Iron Man in the Marvel Cinematic Universe?', 'Robert Downey Jr.', 'Chris Evans', 'Robert Downey Jr.', 'Chris Hemsworth', 'Mark Ruffalo', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Entertainment'), 'What is the name of the coffee shop in "Friends"?', 'Central Perk', 'Java Joint', 'Central Perk', 'Coffee Bean', 'The Grind', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Entertainment'), 'Who directed "Titanic"?', 'James Cameron', 'Steven Spielberg', 'James Cameron', 'Christopher Nolan', 'Martin Scorsese', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Entertainment'), 'What is Superman''s weakness?', 'Kryptonite', 'Magic', 'Kryptonite', 'Fire', 'Water', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Entertainment'), 'Which Disney movie features "Let It Go"?', 'Frozen', 'Moana', 'Frozen', 'Tangled', 'Encanto', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Entertainment'), 'Who played Jack in "Titanic"?', 'Leonardo DiCaprio', 'Brad Pitt', 'Leonardo DiCaprio', 'Tom Cruise', 'Matt Damon', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Entertainment'), 'What is the highest-grossing film of all time?', 'Avatar', 'Avengers: Endgame', 'Avatar', 'Titanic', 'Star Wars', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Entertainment'), 'Who is the host of "The Tonight Show"?', 'Jimmy Fallon', 'Jimmy Kimmel', 'Jimmy Fallon', 'Stephen Colbert', 'James Corden', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Entertainment'), 'What is Baby Yoda''s real name?', 'Grogu', 'Yoda Jr.', 'Grogu', 'Yodeling', 'Mini Yoda', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Entertainment'), 'Which TV show features the Iron Throne?', 'Game of Thrones', 'The Witcher', 'Game of Thrones', 'Vikings', 'The Last Kingdom', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Entertainment'), 'Who sang "Shape of You"?', 'Ed Sheeran', 'Justin Bieber', 'Ed Sheeran', 'Shawn Mendes', 'Harry Styles', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Entertainment'), 'What color pill does Neo take in "The Matrix"?', 'Red', 'Blue', 'Red', 'Green', 'Purple', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Entertainment'), 'Who plays Eleven in "Stranger Things"?', 'Millie Bobby Brown', 'Sadie Sink', 'Millie Bobby Brown', 'Winona Ryder', 'Natalia Dyer', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Entertainment'), 'What is the name of Harry Potter''s school?', 'Hogwarts', 'Beauxbatons', 'Hogwarts', 'Durmstrang', 'Ilvermorny', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Entertainment'), 'Who directed "Jurassic Park"?', 'Steven Spielberg', 'James Cameron', 'Steven Spielberg', 'George Lucas', 'Ridley Scott', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Entertainment'), 'What is the name of the kingdom in "Frozen"?', 'Arendelle', 'Agrabah', 'Arendelle', 'Corona', 'Atlantica', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Entertainment'), 'Who sang "Rolling in the Deep"?', 'Adele', 'Taylor Swift', 'Adele', 'Beyoncé', 'Rihanna', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Entertainment'), 'What is the name of Batman''s butler?', 'Alfred', 'James', 'Alfred', 'Geoffrey', 'Winston', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Entertainment'), 'Which movie features the song "My Heart Will Go On"?', 'Titanic', 'The Bodyguard', 'Titanic', 'Ghost', 'Dirty Dancing', 'rookie', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Entertainment'), 'Who plays Thor in the MCU?', 'Chris Hemsworth', 'Chris Evans', 'Chris Hemsworth', 'Chris Pratt', 'Chris Pine', 'rookie', 'tournament'),
+
+-- Pro Questions (20)
+((SELECT id FROM trivia_categories WHERE name = 'Entertainment'), 'Which film won the first Academy Award for Best Picture?', 'Wings', 'Sunrise', 'Wings', 'The Jazz Singer', 'Metropolis', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Entertainment'), 'Who composed the music for "Star Wars"?', 'John Williams', 'Hans Zimmer', 'John Williams', 'Danny Elfman', 'Howard Shore', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Entertainment'), 'What is the longest-running animated TV show?', 'The Simpsons', 'South Park', 'The Simpsons', 'Family Guy', 'SpongeBob', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Entertainment'), 'Who directed "Pulp Fiction"?', 'Quentin Tarantino', 'Martin Scorsese', 'Quentin Tarantino', 'Coen Brothers', 'Paul Thomas Anderson', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Entertainment'), 'Which Beatles member was shot in 1980?', 'John Lennon', 'Paul McCartney', 'John Lennon', 'George Harrison', 'Ringo Starr', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Entertainment'), 'What is the name of the hotel in "The Shining"?', 'The Overlook Hotel', 'The Stanley Hotel', 'The Overlook Hotel', 'The Grand Hotel', 'The Mountain Hotel', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Entertainment'), 'Who played Hannibal Lecter in "The Silence of the Lambs"?', 'Anthony Hopkins', 'Brian Cox', 'Anthony Hopkins', 'Mads Mikkelsen', 'Gary Oldman', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Entertainment'), 'Which band had a hit with "Bohemian Rhapsody"?', 'Queen', 'The Beatles', 'Queen', 'Led Zeppelin', 'The Rolling Stones', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Entertainment'), 'What year did "Breaking Bad" first air?', '2008', '2006', '2008', '2010', '2005', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Entertainment'), 'Who directed "The Godfather"?', 'Francis Ford Coppola', 'Martin Scorsese', 'Francis Ford Coppola', 'Brian De Palma', 'Michael Cimino', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Entertainment'), 'What is the real name of Lady Gaga?', 'Stefani Germanotta', 'Madonna Ciccone', 'Stefani Germanotta', 'Alicia Keys', 'Katy Perry', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Entertainment'), 'Which actor has won the most Oscars?', 'Katharine Hepburn', 'Meryl Streep', 'Katharine Hepburn', 'Daniel Day-Lewis', 'Jack Nicholson', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Entertainment'), 'What is the highest-rated show on IMDb?', 'Breaking Bad', 'Game of Thrones', 'Breaking Bad', 'The Wire', 'The Sopranos', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Entertainment'), 'Who directed "Schindler''s List"?', 'Steven Spielberg', 'Roman Polanski', 'Steven Spielberg', 'Oliver Stone', 'Clint Eastwood', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Entertainment'), 'Which rapper is known as "Slim Shady"?', 'Eminem', 'Dr. Dre', 'Eminem', '50 Cent', 'Snoop Dogg', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Entertainment'), 'What is the name of the fictional metal in "Black Panther"?', 'Vibranium', 'Adamantium', 'Vibranium', 'Unobtainium', 'Beskar', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Entertainment'), 'Who played Walter White in "Breaking Bad"?', 'Bryan Cranston', 'Aaron Paul', 'Bryan Cranston', 'Dean Norris', 'Bob Odenkirk', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Entertainment'), 'Which movie features the line "Here''s looking at you, kid"?', 'Casablanca', 'Gone with the Wind', 'Casablanca', 'The Maltese Falcon', 'To Have and Have Not', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Entertainment'), 'What is the best-selling album of all time?', 'Thriller', 'Back in Black', 'Thriller', 'The Dark Side of the Moon', 'Abbey Road', 'pro', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Entertainment'), 'Who created "The Simpsons"?', 'Matt Groening', 'Seth MacFarlane', 'Matt Groening', 'Trey Parker', 'Mike Judge', 'pro', 'tournament'),
+
+-- Legend Questions (10)
+((SELECT id FROM trivia_categories WHERE name = 'Entertainment'), 'What was the first feature-length animated film?', 'Snow White (1937)', 'Fantasia', 'Snow White (1937)', 'Pinocchio', 'Bambi', 'legend', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Entertainment'), 'Which film has won the most Oscars?', 'Ben-Hur/Titanic/LotR:RotK (11)', 'Gone with the Wind', 'Ben-Hur/Titanic/LotR:RotK (11)', 'West Side Story', 'The English Patient', 'legend', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Entertainment'), 'What is the Kuleshov Effect?', 'Film editing technique', 'Camera movement', 'Film editing technique', 'Lighting technique', 'Sound design', 'legend', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Entertainment'), 'Who composed the opera "The Ring Cycle"?', 'Richard Wagner', 'Giuseppe Verdi', 'Richard Wagner', 'Giacomo Puccini', 'Wolfgang Mozart', 'legend', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Entertainment'), 'What is the EGOT?', 'Emmy, Grammy, Oscar, Tony', 'Entertainment Grand Ownership Title', 'Emmy, Grammy, Oscar, Tony', 'Elite Global Outstanding Talent', 'Entertainment Guild of Theatre', 'legend', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Entertainment'), 'Which silent film star never spoke in talkies?', 'Greta Garbo (mostly)', 'Charlie Chaplin', 'Greta Garbo (mostly)', 'Buster Keaton', 'Harold Lloyd', 'legend', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Entertainment'), 'What is the Dogme 95 movement?', 'Danish filmmaking', 'French New Wave', 'Danish filmmaking', 'Italian Neorealism', 'German Expressionism', 'legend', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Entertainment'), 'Who directed "The Seventh Seal"?', 'Ingmar Bergman', 'Federico Fellini', 'Ingmar Bergman', 'Akira Kurosawa', 'Andrei Tarkovsky', 'legend', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Entertainment'), 'What is the Wilhelm Scream?', 'Stock sound effect', 'Film lighting technique', 'Stock sound effect', 'Camera angle', 'Editing transition', 'legend', 'tournament'),
+((SELECT id FROM trivia_categories WHERE name = 'Entertainment'), 'Which composer wrote "The Rite of Spring"?', 'Igor Stravinsky', 'Claude Debussy', 'Igor Stravinsky', 'Sergei Rachmaninoff', 'Maurice Ravel', 'legend', 'tournament');
